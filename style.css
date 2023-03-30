@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Times;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button
+  {
+      padding: 18px;
+      font-weight: bold;
+      background-color: navajowhite;
+  }
+  #FinalScore{
+      font-weight: bolder
+  }
+  span{
+      color: black;
+  }
+
+    h3{
+        font-size: large;
+    }
+
+    label{
+        position: relative;
+        color: navajowhite;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px 50px ;
+        display: flex;
+        align-items: center;
+        width: 800px;
+        max-width: 80%;
+        background-color: grey 50%;
+        border-radius: 5px;
+        padding:10px;
+        box-shadow: 0 0 9px 1px;
+    }
+
+        label:before{
+
+        }
+        input[type="radio"]:checked + label{
+            background-color: navajowhite;
+        }
+        input[type="radio"]:checked + label::before{
+            height: 50px;
+            width: 50px;
+            border: 10px snow;
+        }

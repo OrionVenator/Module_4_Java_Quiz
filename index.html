@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type ="text/css" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="OpeningMessage">
+            <div id="StartQuiz">
+             <h1>Coding Quiz</h1>
+             <article> Try to keep answer the code-related questions within your time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</article>
+            <button id="StartBtn" onclick="timer()">Start Quiz </button>
+        </div>
+        </div>
+        <div id="timerText"></div>
+ <form  name ="quiz" id="quiz">
+            <div id="q1">
+                <h3>QUESTION1</h3>
+                <input type="radio" value="Strings" name="question1" ><label ><span>Strings</span></label>
+                    <br>
+                <input type ="radio" value="Booleans" name="question1" ><label ><span>Booleans</span></label>
+                    <br>
+                <input type="radio" value="Alerts" name="question1" ><label ><span>Alerts</span></label>
+                    <br>
+                <input type="radio" value="Numbers" name="question1" ><label ><span>Numbers</span></label>
+            
+            </div>
+    
+   
+    <div id="q2">
+       <h3>QUESTION2.</h3>
+            <input type ="radio" value="Quotes" name="question2"><label ><span>Quotes</span></label>
+                <br>
+            <input type="radio" value="Curly brackets" name="question2"><label ><span>Curly brackets</span></label>
+                <br>
+            <input type="radio" value="parenthesis" name="question2" ><label ><span>parenthesis</span></label>
+              <br>
+            <input type="radio"  value="Square brackets" name="question2" ><label ><span>Square brackets</span></label>
+    </div>
+    <div id="q3">
+        <h3>QUESTION3</h3>
+            <input type="radio" value="numbers and strings" name="question3" ><label ><span>numbers and strings</span></label>
+                <br>
+            <input type="radio" value="other arrays" name="question3" ><label ><span>other arrays</span></label>
+             <br>
+            <input type="radio" value="booleans" name="question3" ><label ><span>booleans</span></label>
+                <br>
+            <input type="radio"  value="all of the above" name="question3" ><label ><span>all of the above</span></label>
+    </div>
+    <div id="q4">
+        <h3>QUESTION4</h3>
+            <input type="radio" value="commas" name="question4" ><label ><span>commas</span></label>
+                 <br>
+            <input type="radio" value="curly brackets" name="question4" ><label ><span>curly brackets</span></label>
+                 <br>
+            <input type="radio" value="quotes" name="question4" ><label ><span>quotes</span></label>
+                <br>
+            <input type="radio" value="parenthesis" name="question4" ><label ><span>parenthesis</span></label>
+    </div>
+    <div id="q5">
+        <h3>QUESTION5</h3>
+            <input type="radio" value="Javascript" name="question5" ><label ><span>Javascript</span></label>
+                 <br>
+            <input type="radio" value="terminalBash" name="question5" ><label ><span>terminalBash</span></label>
+                 <br>
+            <input type="radio" value="For Loops" name="question5" ><label ><span>for loops</span></label>
+                 <br>
+            <input type="radio" value="console.log" name="question5" ><label ><span>console.log</span></label>
+    </div>
+     <div id="q6">
+        <h3>QUESTION6</h3>
+            <input type="radio"  value="Strings" name="question6" ><label ><span>Strings</span></label>
+            <br>
+            <input type="radio" value="Booleans" name="question6" ><label ><span>Booleans</span></label>
+            <br>
+            <input type="radio"  value="Alerts" name="question6" ><label><span>Alerts</span></label>
+            <br>
+            <input type="radio" value="Numbers" name="question6" ><label><span>Numbers</span></label>
+     </div> 
+        <section id="postQuiz">
+        <p>Your final score is:</p><div id="FinalScore"></div>
+        <input id ="submitAnswer" type="button" name="" value="Submit" onclick="scanAnswers()">
+        <input id="Username" type="text" placeholder="Add initals here"  onclick ="usernames()">
+        </section>
+</form>
+       
+       
+       
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script src="script.js" type="text/javascript"></script>
+
+
+</body>
+</html>
